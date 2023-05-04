@@ -1,0 +1,24 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node",
+        "config": {
+          "devDependencies": {
+            "esbuild": "^0.17.18"
+          },
+          "scripts": {
+            "build": "vite build",
+            "start": "node index.js"
+          },
+          "build": {
+            "outDir": "dist"
+          }
+        }
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "index.js" }
+    ]
+  }
+  
