@@ -1,0 +1,53 @@
+.navContainer {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 3vw;
+}
+.navBar {
+    height: 40px;
+    background: linear-gradient(93.65deg, #321C64 -83.9%, #1D1133 32.3%, #09204D 150.94%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+}
+.navBar a {
+    height: auto;
+    width: auto;
+}
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3vw;
+    padding: 0 1rem 0 1rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.logo {
+    height: 32px;
+}
+.logo:hover {
+    height: 36px;
+}
+.navContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navBtn {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    margin: 0 1rem 0 1rem;
+    padding: 0 1rem 0 1rem;
+}
+.navBtn:hover {
+    color: aqua;
+}
+.activeNav {
+    font-weight: 700;
+    color: aqua;
+}

@@ -1,0 +1,25 @@
+.footer {
+    width: 100%;
+}
+.iconsContainer {
+    margin-left: auto;
+}
+.footerContainer {
+    background-color: #1E1E1E;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 5vw 1rem 5vw;
+}
+.iconsContainer {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 1rem;
+}
+.iconsContainer * {
+    margin-right: 2vw;
+    display: flex;
+    justify-content: center;
+}

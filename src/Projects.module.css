@@ -1,0 +1,52 @@
+.projectsPage {
+    padding: 40px 0 0 0;
+}
+.titleContainer {
+    background-color: #1E1E1E;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    color: white;
+}
+.titleContainer * {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0 2rem 0 2rem;
+}
+.titleContainer *:hover {
+    color: aqua;
+    cursor: pointer;
+}
+.activeTitle {
+    color: aqua;
+}
+
+/* Circle Transition ========================================== */
+.circleAni {
+    position: fixed;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 105%;
+    min-width: 150vw;
+    min-height: 150vh;
+    border-radius: 50%;
+    z-index: 8;
+    filter: blur(1vw);
+    pointer-events: none;
+    transition: left 1.5s ease-in-out, transform 1.5s ease-in-out;
+    aspect-ratio: 1/1;
+}
+  
+.circleAni.active {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    aspect-ratio: 1/1;
+    transition-duration: 1.5s;
+}
+
+.circleAni.hovered {
+    left: 95%;
+    transition-duration: 0.3s;
+}

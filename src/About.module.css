@@ -1,0 +1,131 @@
+.aboutPage {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+.leftSection {
+    position: fixed;
+    display: flex;
+    height: 90vh;
+    width: 300px;
+    background-color: #1E1E1E;
+    padding: 10vh 3vw 0 5vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imgContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.portraitImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+.portraitAlt {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.imgContainer:hover .portraitImg {
+    opacity: 0;
+}
+
+
+.iconsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 0 1vh 0;
+    width: 70%;
+}
+.iconsContainer * {
+    display: flex;
+    justify-content: center;
+}
+
+.statusTag {
+    color: white;
+    font-weight: 700;
+    font-family: 'Zilla Slab', serif;
+}
+
+.rightPad {
+    height: 100vh;
+    min-width: 300px;
+    margin-left: 8vw;
+}
+.rightSection {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.textContainer {
+    padding: 10vh 5vw 5vh 5vw;
+    text-align: left;
+    height: auto;
+}
+.rightSection h2 {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.aboutPoints {
+    line-height: 150%;
+    list-style: none;
+    margin-left: 1.5em;
+    padding-left: 0;
+    margin-top: 0;
+}
+.aboutPoints li::before {
+    content: "•";
+    font-size: 1.5em;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-top: 1rem;
+}
+
+.quotesContainer {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(93.65deg, #321C64 -83.9%, #1D1133 32.3%, #09204D 150.94%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-self: flex-end;
+    color: white;
+    justify-content: center;
+}
+.quoteBox {
+    width: 33%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.quote {
+    padding-bottom: 1rem;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 150%;
+}
+/* .breakLine {
+    height: 70%;
+    width: 1px;
+    background-color: white;
+} */
