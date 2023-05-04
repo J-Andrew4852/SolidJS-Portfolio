@@ -1,6 +1,6 @@
 import { Component, createSignal } from 'solid-js';
 import { Accessor } from 'solid-js';
-import styles from './CircleHero.module.css';
+import styles from './circleHero.module.css';
 
 interface Props {
     fillColor: Accessor<any>;
