@@ -1,0 +1,65 @@
+.projectPage {
+    text-align: left;
+}
+
+.topColourSection {
+    height: auto;
+    width: 100%;
+    background: linear-gradient(rgba(245, 175, 25, 0.9) -35.75%, rgba(241, 39, 17, 0.9) 49.47%, rgba(226, 89, 32, 0.9) 134.15%);
+    padding: calc(80px + 2vh) 0 calc(5vw + 5vh) 0;
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    background-color: #1E1E1E;
+    padding: 2rem;
+    width: 50%;
+}
+.tools {
+    margin: 0 2rem 0 5vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+    justify-items: center; /* center horizontally */
+    align-items: center; /* center vertically */
+}
+.tools p {
+    grid-area: 1 / 1 / 2 / 5;
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    font-family: 'Zilla Slab', serif;
+}
+.tools * {
+    margin: 10px; /* gap between icons */
+}
+.webLinks {
+    margin: 0 5vw 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.webLinks a {
+    width: 100%;
+    text-decoration: none;
+}
+.webLink {
+    border: solid white 1px;
+    height: auto;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.webLink * {
+    padding: 1vh 0.6vw 1vh 0.6vw;
+}
+.webLink:hover path {
+    fill: aqua;
+}
+.webLink:hover {
+    border: solid aqua 1px;
+    color: aqua;
+    cursor: pointer;
+}
