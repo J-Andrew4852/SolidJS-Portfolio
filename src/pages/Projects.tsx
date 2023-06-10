@@ -103,7 +103,7 @@ const Projects: Component = () => {
             <div class={styles.circleAni} id="circleAni"></div>
             {activeTab() === 0 && <ExhibitionSpace onClick={() => handleTabClick(3, 'rgba(121, 197, 0, 1)')} onHover={() => {setHover(true); setColor('rgba(121, 197, 0, 1)')}} onLeave={() => setHover(false)}/>}
             {activeTab() === 1 && <Bibliofile onClick={() => handleTabClick(4, 'rgba(245, 175, 25)')} onHover={() => {setHover(true); setColor('rgba(245, 175, 25)')}} onLeave={() => setHover(false)} />}
-            {activeTab() === 2 && <SustainabilityVictoria onClick={() => handleTabClick(5, 'blue')} onHover={() => {setHover(true); setColor('blue')}} onLeave={() => setHover(false)} />}
+            {activeTab() === 2 && <SustainabilityVictoria onClick={() => handleTabClick(5, 'rgba(17, 152, 120)')} onHover={() => {setHover(true); setColor('rgba(17, 152, 120)')}} onLeave={() => setHover(false)} />}
             {activeTab() === 3 && <ESProject />}
             {activeTab() === 4 && <BFProject />}
             {activeTab() === 5 && <SVProject />}
