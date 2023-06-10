@@ -5,7 +5,7 @@
 .topColourSection {
     height: auto;
     width: 100%;
-    background: linear-gradient(rgba(245, 175, 25, 0.9) -35.75%, rgba(241, 39, 17, 0.9) 49.47%, rgba(226, 89, 32, 0.9) 134.15%);
+    background: linear-gradient(rgba(241, 39, 17, 0.9) -35.75%, rgba(245, 175, 25, 0.9) 49.47%, rgba(226, 89, 32, 0.9) 134.15%);
     padding: calc(80px + 2vh) 0 calc(5vw + 5vh) 0;
     display: flex;
     justify-content: space-between;
@@ -62,4 +62,147 @@
     border: solid aqua 1px;
     color: aqua;
     cursor: pointer;
+}
+
+
+/* Write Up Section ================================================== */
+.writeUpSection {
+    position: relative;
+    z-index: 2;
+    margin: -5vw 0;
+    padding: calc(80px + 2vh) 5vw 5vh 5vw;
+    background-color: white;
+    border-radius: 5vw;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.goalSolution {
+    display: flex;
+    justify-content: space-between;
+}
+.goal {
+    padding: 2rem;
+    width: 50%;
+}
+.writeUpSection h2 {
+    font-family: 'Zilla Slab', serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.goalPoints {
+    line-height: 150%;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    margin-left: -2.5rem;
+    padding-top: 1rem;
+}
+  
+.goalPoints li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+.goalPoints li::before {
+    content: "•";
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    margin-top: -0.5rem;
+    color: rgba(245, 175, 25, 1);
+}
+
+.solution {
+    padding: 2rem;
+    width: 50%;
+}
+.solution p {
+    line-height: 150%;
+}
+
+.roleSection {
+    padding: 5vh 0 5vw 0;
+}
+.myRole {
+    width: 60%;
+    padding: 2rem 2rem 0 2rem;
+    line-height: 150%;
+}
+.myRole h2 {
+    margin-bottom: 3rem;
+}
+.clipContainer {
+    width: 60%;
+    border-radius: 1vw;
+    overflow: hidden;
+    box-shadow: 0px 1vw 2vw rgba(0, 0, 0, 0.25);
+    margin: 0 2rem 3rem 2rem;
+}
+.roleSection video {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.walkthroughPoints {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+.walkthroughPoints::before {
+    content: "•";
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    margin-top: -0.5rem;
+    color: rgba(245, 175, 25, 1);
+}
+
+
+
+
+.botColourSection {
+    height: auto;
+    width: 100%;
+    background: linear-gradient(rgba(241, 39, 17, 0.9) -35.75%, rgba(245, 175, 25, 0.9) 49.47%, rgba(226, 89, 32, 0.9) 134.15%);
+    padding: calc(7vh + 5vw) 0 10vh 0;
+}
+.reflectSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.reflectSection h2 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 700;
+}
+.textBox {
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    line-height: 150%;
+}
+.leadershipBox {
+    margin: 0 2rem 0 5vw;
+    width: 70%;
+    font-weight: 500;
+}
+.quoteBox p {
+    margin-top: auto;
+    padding-top: 3rem;
+    text-align: center;
+}
+.quoteBox {
+    margin: 0 5vw 0 2rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.quoteBox h2 {
+    font-size: 1.5rem;
+    line-height: 150%;
 }
