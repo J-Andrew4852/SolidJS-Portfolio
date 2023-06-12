@@ -46,7 +46,14 @@ const ParticleAnimation = (props: Props) => {
     // Create function to add new circle
     function addNewCircle() {
       // Get center of canvas
-      const centerX = canvas.width / 1.3;
+      let centerX;
+      if (window.matchMedia("(max-width: 1024px)").matches) {
+        centerX = canvas.width / 1.3;
+        console.log('1.3')
+      } else {
+        centerX = canvas.width / 2;
+        console.log('2')
+      }
       const centerY = canvas.height / 2;
 
       // Generate random angle for circle direction
