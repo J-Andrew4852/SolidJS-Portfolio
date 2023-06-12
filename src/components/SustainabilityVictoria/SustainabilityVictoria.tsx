@@ -13,7 +13,10 @@ const SustainabilityVictoria: Component<Props> = (props) => {
         <div class={styles.projectSection}>
             <div class={styles.previewContent}>
                 <div class={styles.textContainer}>
-                    <h2>Sustainability Victoria</h2>
+                    <div class={styles.previewTitles}>
+                        <h2>Sustainability Victoria</h2>
+                        <h3>UX/UI Design - Individual Project</h3>
+                    </div>
                     <p>Sustainability Victoria was a fictional brief that required me to design a mobile application to help Victorians home grow plants and then use what they grow in their cooking. This project focused on following a design process in order to refine the design to create the best solution for the given brief. This was a UX / UI design project where the prototype was created in Figma along with the design process being documented in a blog.</p>
                 </div>
                 <div class={styles.galleryContainer}>

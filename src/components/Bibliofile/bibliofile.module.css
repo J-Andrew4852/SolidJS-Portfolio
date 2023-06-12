@@ -9,6 +9,17 @@
     font-family: 'Zilla Slab', serif;
     font-size: 1.8rem;
 }
+.projectSection h3 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 700;
+    color: rgba(245, 175, 25, 1);
+    margin: 0.5rem 0 0.5rem 0;
+    margin-left: auto;
+}
+.previewTitles {
+    display: flex;
+    text-align: center;
+}
 .projectSection p {
     font-size: 0.9rem;
     line-height: 150%;

@@ -19,7 +19,10 @@ const Bibliofile: Component<Props> = (props) => {
         <div class={styles.projectSection}>
             <div class={styles.previewContent}>
                 <div class={styles.textContainer}>
-                    <h2>BiblioFile</h2>
+                    <div class={styles.previewTitles}>
+                        <h2>BiblioFile</h2>
+                        <h3>Fullstack - Group Project</h3>
+                    </div>
                     <p>Bibliofile is a website for writers, teachers and other creatives that will benefit from a randomised character generator. The website allows users to sign up, create stories, add characters to their stories, make edits to characters, and write notes on both stories and characters. As part of a three-person group, which included a UX Designer (Ben Crook) and a UX Researcher (Kate MacKenzie), I contributed as the Web Developer.</p>
                 </div>
                 <div class={styles.galleryContainer}>

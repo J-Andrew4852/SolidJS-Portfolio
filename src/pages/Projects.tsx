@@ -6,6 +6,7 @@ import SustainabilityVictoria from '../components/SustainabilityVictoria/Sustain
 import ESProject from '../components/ExhibitionSpace/ProjectPage/ESProject';
 import BFProject from '../components/Bibliofile/ProjectPage/BFProject';
 import SVProject from '../components/SustainabilityVictoria/ProjectPage/SVProject';
+import Footer from '../components/Footer/Footer';
 
 
 const Projects: Component = () => {
@@ -107,6 +108,7 @@ const Projects: Component = () => {
             {activeTab() === 3 && <ESProject />}
             {activeTab() === 4 && <BFProject />}
             {activeTab() === 5 && <SVProject />}
+            <Footer />
         </div>
     )
 }

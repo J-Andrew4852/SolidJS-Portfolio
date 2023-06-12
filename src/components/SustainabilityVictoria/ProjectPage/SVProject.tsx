@@ -3,6 +3,12 @@ import styles from './sVProject.module.css'
 import { GithubLarge, WebsiteLink } from '../../Icons/Icons';
 import imgHome from '../../../assets/images/ViSu/Home.jpg'
 import imgMenu from '../../../assets/images/ViSu/BurgerMenu.jpg'
+import imgCuisine from '../../../assets/images/ViSu/CuisineGallery.jpg'
+import imgRecipe from '../../../assets/images/ViSu/HomegrownRecipes.jpg'
+import imgGuide from '../../../assets/images/ViSu/Recipe.jpg'
+import imgTags from '../../../assets/images/ViSu/HomegrownRecipesTags.jpg'
+import imgBookmark from '../../../assets/images/ViSu/Bookmarks.jpg'
+import imgNotification from '../../../assets/images/ViSu/HomeHerbsBasil.jpg'
 
 const SVProject: Component = () => {
     return (
@@ -55,16 +61,25 @@ const SVProject: Component = () => {
                         <p class={styles.walkthroughPoints}>The Homepage showcases the 4 main functions of the app, finding recipes you like through filters such as cuisines or through a search. Then the herbs that are recommend to you will show up on the Bookmarked page, where the user can then add herbs to the Home Herbs page once you have the plant.</p>
                     </div>
                     <div class={styles.myRole}>
-                        <p class={styles.walkthroughPoints}>Create an account through the secure sign-up and login page.</p>
+                        <div class={styles.galleryContainer}>
+                            <img class={styles.img1} src={imgCuisine} alt="Image 3" />
+                            <img class={styles.img2} src={imgRecipe} alt="Image 4" />
+                        </div>
+                        <p class={styles.walkthroughPoints}>Choose your favourite cuisines, explore their highest rated recipes and add recipes to your bookmarks.</p>
                     </div>
                     <div class={styles.myRole}>
-                        <p class={styles.walkthroughPoints}>Add Stories to organise your Characters into groups, then create as many Characters as you want within those stories.</p>
+                        <div class={styles.galleryContainer}>
+                            <img class={styles.img1} src={imgGuide} alt="Image 3" />
+                            <img class={styles.img2} src={imgTags} alt="Image 4" />
+                        </div>
+                        <p class={styles.walkthroughPoints}>Search for the recipes you want to see through a tagged search, whether you want certain ingredients, a specific cooking time or recipe difficulty.</p>
                     </div>
                     <div class={styles.myRole}>
-                        <p class={styles.walkthroughPoints}>Once you have created a Character you can regenerate every aspect of that Character, or you can choose to regenerate or change certain parts.</p>
-                    </div>
-                    <div class={styles.myRole}>
-                        <p class={styles.walkthroughPoints}>You can also start writing notes on the Characters or the Stories that you have created.</p>
+                        <div class={styles.galleryContainer}>
+                            <img class={styles.img1} src={imgBookmark} alt="Image 3" />
+                            <img class={styles.img2} src={imgNotification} alt="Image 4" />
+                        </div>
+                        <p class={styles.walkthroughPoints}>Once you have bookmarked some recipes, see your recommended herbs and try growing some. The app will guide you through taking care of your plants, just edit the notifications and reminders to you preference.</p>
                     </div>
                 </div>
             </div>
@@ -72,10 +87,10 @@ const SVProject: Component = () => {
                 <div class={styles.reflectSection}>
                     <div class={`${styles.leadershipBox} ${styles.textBox}`}>
                         <h2>Reflection</h2>
-                        <p>After taking some classes at Curtin University for writing, I became somewhat of a creative writer myself and had the idea of BiblioFile. It was an ambitious project for the timeframe, especially with it being my first Full-stack website, but it is rewarding to see my idea become a working product. While I am satisfied with the functionality of the website, I would like to eventually rebuild the website with modern frameworks and less plugins. I believe that I would be able to rebuild the website and fix most if not all of the current issues with my current web development skills. Although if I were to go through the effort of rebuilding the website I would like to redesign it and look at the possibility of using AI image generators to create the images of the characters and their background.</p>
+                        <p>While working on this the Sustainability Victoria brief, I focused on meeting all of the users wants and needs. This lead to a large scale application for the brief, the solution doesn’t just focus on growing plants or cooking healthy food but does but simultaneously. I was able to create a visually pleasing design through multiple redesigns throughout the design process, although the Figma prototype could be more interactive. While the Figma prototype has many screens and functions well, the lack of animations and micro-interaction make the experience further from a fully developed mobile application.</p>
                     </div>
                     <div class={`${styles.quoteBox} ${styles.textBox}`}>
-                        <h2>"The development of the BiblioFile website was an enjoyable challenge that I could work hard towards completing, as I felt the idea was unique and interesting."</h2>
+                        <h2>"Throughout the design process I made multiple resdesigns not only leading to a cleaner design but also improving my UX / UI design skills."</h2>
                     </div>
                 </div>
             </div>
