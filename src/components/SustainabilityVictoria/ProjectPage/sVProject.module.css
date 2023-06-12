@@ -1,0 +1,206 @@
+.projectPage {
+    text-align: left;
+}
+
+.topColourSection {
+    height: auto;
+    width: 100%;
+    background: linear-gradient(rgba(41, 1, 155, 0.9) -35.75%, rgba(17, 152, 120, 0.9) 49.47%, rgba(1, 84, 131, 0.9) 134.15%);
+    padding: calc(80px + 2vh) 0 calc(5vw + 5vh) 0;
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    background-color: #1E1E1E;
+    padding: 2rem;
+    width: 50%;
+}
+.figma {
+    margin: 0 2rem 0 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.figma a {
+    width: 100%;
+    text-decoration: none;
+}
+.blog {
+    margin: 0 5vw 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.blog a {
+    width: 100%;
+    text-decoration: none;
+}
+.webLink {
+    border: solid white 1px;
+    height: auto;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.webLink * {
+    padding: 1vh 0.6vw 1vh 0.6vw;
+}
+.webLink:hover path {
+    fill: aqua;
+}
+.webLink:hover {
+    border: solid aqua 1px;
+    color: aqua;
+    cursor: pointer;
+}
+
+
+/* Write Up Section ================================================== */
+.writeUpSection {
+    position: relative;
+    z-index: 2;
+    margin: -5vw 0;
+    padding: calc(80px + 2vh) 5vw 5vh 5vw;
+    background-color: white;
+    border-radius: 5vw;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.goalSolution {
+    display: flex;
+    justify-content: space-between;
+}
+.goal {
+    padding: 2rem;
+    width: 50%;
+}
+.writeUpSection h2 {
+    font-family: 'Zilla Slab', serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.goalPoints {
+    line-height: 150%;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    margin-left: -2.5rem;
+    padding-top: 1rem;
+}
+  
+.goalPoints li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+.goalPoints li::before {
+    content: "•";
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    margin-top: -0.5rem;
+    color: rgba(17, 152, 120, 1);
+}
+
+.solution {
+    padding: 2rem;
+    width: 50%;
+}
+.solution p {
+    line-height: 150%;
+}
+
+.roleSection {
+    padding: 5vh 0 5vw 0;
+}
+.myRole {
+    width: 75%;
+    padding: 2rem 2rem 0 2rem;
+    line-height: 150%;
+    display: flex;
+}
+.myRole h2 {
+    margin-bottom: 3rem;
+}
+
+
+.walkthroughPoints {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    margin-top: 0;
+    font-weight: 500;
+}
+.walkthroughPoints::before {
+    content: "•";
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    margin-top: -0.5rem;
+    color: rgba(17, 152, 120, 1);
+}
+
+.galleryContainer {
+    padding: 0 5vw 2vw 0;
+    width: 40%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto;
+    grid-gap: 10%;
+}
+.galleryContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1vw;
+    filter: drop-shadow(0.3vw 0.5vw 1vw rgba(0, 0, 0, 0.25));
+}
+
+
+.botColourSection {
+    height: auto;
+    width: 100%;
+    background: linear-gradient(rgba(41, 1, 155, 0.9) -35.75%, rgba(17, 152, 120, 0.9) 49.47%, rgba(1, 84, 131, 0.9) 134.15%);
+    padding: calc(7vh + 5vw) 0 10vh 0;
+}
+.reflectSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.reflectSection h2 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 700;
+}
+.textBox {
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    line-height: 150%;
+}
+.leadershipBox {
+    margin: 0 2rem 0 5vw;
+    width: 70%;
+    font-weight: 500;
+}
+.quoteBox p {
+    margin-top: auto;
+    padding-top: 3rem;
+    text-align: center;
+}
+.quoteBox {
+    margin: 0 5vw 0 2rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.quoteBox h2 {
+    font-size: 1.5rem;
+    line-height: 150%;
+}

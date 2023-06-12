@@ -91,12 +91,11 @@ const ESProject: Component = () => {
             <div class={styles.botColourSection}>
                 <div class={styles.reflectSection}>
                     <div class={`${styles.leadershipBox} ${styles.textBox}`}>
-                        <h2>Leadership</h2>
+                        <h2>Reflection</h2>
                         <p>Throughout this project not only did I improve my coding skills greatly, but I also made great strides when it came to leadership. I acquired new knowledge and experience in managing the team, conducting meetings both in person and online, the Github repo and sending updates to the groups Discord. I also gained confidence in my leadership through taking on more responsibilities than I thought I could and rising to the occasion. I didn’t see myself being responsible for the website and its launch at the start of the project, although it became a rewarding and valuable experience in the end.</p>
                     </div>
                     <div class={`${styles.quoteBox} ${styles.textBox}`}>
-                        <h2>"This is a sample quote it is just a placeholder and will soon be replaced with the proper quote"</h2>
-                        <p>Esablishment -<br />Name of Person</p>
+                        <h2>"This project tested my leadership and coding skills, which lead me to gain confidence and improve in both areas."</h2>
                     </div>
                 </div>
             </div>
