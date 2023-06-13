@@ -86,7 +86,6 @@ const Projects: Component = () => {
     createEffect(() => {
         // Get the element for the new active tab
         const activeTabElement = document.querySelector(`#${styles[`tab${activeTab()}`]}`);
-
         // Scroll the page to the top of the new active tab
         window.scrollTo({
             top: 0, // Subtract 90 to account for the header
