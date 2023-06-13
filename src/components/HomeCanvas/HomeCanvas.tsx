@@ -48,11 +48,11 @@ const ParticleAnimation = (props: Props) => {
       // Get center of canvas
       let centerX;
       if (window.matchMedia("(max-width: 1024px)").matches) {
-        centerX = canvas.width / 1.3;
-        console.log('1.3')
-      } else {
         centerX = canvas.width / 2;
         console.log('2')
+      } else {
+        centerX = canvas.width / 1.3;
+        console.log('1.3')
       }
       const centerY = canvas.height / 2;
 

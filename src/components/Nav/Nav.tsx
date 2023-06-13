@@ -9,21 +9,23 @@ const Nav: Component = () => {
     
     return (
         <nav class={styles.navBar}>
-            <a href="/">
-                <div class={styles.logoContainer}>
-                    <img class={styles.logo} src={logo} alt="logo" />
+            <div class={styles.navContent}>
+                <a href="/">
+                    <div class={styles.logoContainer}>
+                        <img class={styles.logo} src={logo} alt="logo" />
+                    </div>
+                </a>
+                <div class={styles.navContainer}>
+                    <NavLink href='/' class={location.pathname === '/' ? `${styles.navBtn} ${styles.activeNav}` : styles.navBtn}>
+                        Home
+                    </NavLink>
+                    <NavLink href='/projects' class={location.pathname === '/projects' ? `${styles.navBtn} ${styles.activeNav}` : styles.navBtn}>
+                        Projects
+                    </NavLink>
+                    <NavLink href='/about' class={location.pathname === '/about' ? `${styles.navBtn} ${styles.activeNav}` : styles.navBtn}>
+                        About
+                    </NavLink>
                 </div>
-            </a>
-            <div class={styles.navContainer}>
-                <NavLink href='/' class={location.pathname === '/' ? `${styles.navBtn} ${styles.activeNav}` : styles.navBtn}>
-                    Home
-                </NavLink>
-                <NavLink href='/projects' class={location.pathname === '/projects' ? `${styles.navBtn} ${styles.activeNav}` : styles.navBtn}>
-                    Projects
-                </NavLink>
-                <NavLink href='/about' class={location.pathname === '/about' ? `${styles.navBtn} ${styles.activeNav}` : styles.navBtn}>
-                    About
-                </NavLink>
             </div>
         </nav>
     )

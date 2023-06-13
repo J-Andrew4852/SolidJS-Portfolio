@@ -36,20 +36,22 @@ const Home: Component = () => {
             <div class={styles.topSection}>
                 <HomeCanvas fillColor={fillColor} />
                 <CircleHero fillColor={fillColor} fillColorD={fillColorD} fillColorL={fillColorL} onClick={changeColor}/>
-                <div class={styles.leftSection}>
-                    <div class={styles.heroText}>
-                        <h2 class={styles.heroHeader}>James Andrew Digital</h2>
-                        <p class={styles.heroBody}>Hi, I'm James. I recently graduated from Curtin University. I am a Frontend Dev/Web Designer, located in Perth.</p>
-                    </div>
-                    <div class={styles.iconsBtnContainer}>
-                        <div class={styles.iconsContainer}>
-                            <Github colour={'black'} linkers='https://github.com/J-Andrew4852/' />
-                            <Linkedin colour={'black'} />
-                            <Email colour={'black'} email='james.andrew4852@gmail.com' />
+                <div class={styles.heroFlex}>
+                    <div class={styles.leftSection}>
+                        <div class={styles.heroText}>
+                            <h2 class={styles.heroHeader}>James Andrew Digital</h2>
+                            <p class={styles.heroBody}>Hi, I'm James. I recently graduated from Curtin University. I am a Frontend Dev/Web Designer, located in Perth.</p>
                         </div>
-                        <Link href="/projects">
-                            <div class={styles.projectsBtn}>Projects</div>
-                        </Link>
+                        <div class={styles.iconsBtnContainer}>
+                            <div class={styles.iconsContainer}>
+                                <Github colour={'black'} linkers='https://github.com/J-Andrew4852/' />
+                                <Linkedin colour={'black'} />
+                                <Email colour={'black'} email='james.andrew4852@gmail.com' />
+                            </div>
+                            <Link href="/projects">
+                                <div class={styles.projectsBtn}>Projects</div>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -57,30 +59,32 @@ const Home: Component = () => {
                 <div class={styles.showreelContainer}>SHOWREEL<br />COMING<br />SOON</div>
             </div>
             <div class={styles.botSection}>
-                <div class={styles.botText}>
-                    <h2 class={styles.botHeader}>Portfolio Work</h2>
-                    <p class={styles.botBody}>My portfolio contains my best work while I was completing my Digital Design degree at Curtin University. While the course focused more on web design, I have come to enjoy coding more and therefore my best projects are my website development projects.</p>
-                    <div class={styles.botBtnContainer}>
-                        <Link href="/projects">
-                            <div class={styles.projectsBtn}>Projects</div>
-                        </Link>
+                <div class={styles.botContent}>
+                    <div class={styles.botText}>
+                        <h2 class={styles.botHeader}>Portfolio Work</h2>
+                        <p class={styles.botBody}>My portfolio contains my best work while I was completing my Digital Design degree at Curtin University. While the course focused more on web design, I have come to enjoy coding more and therefore my best projects are my website development projects.</p>
+                        <div class={styles.botBtnContainer}>
+                            <Link href="/projects">
+                                <div class={styles.projectsBtn}>Projects</div>
+                            </Link>
+                        </div>
                     </div>
-                </div>
-                <div class={styles.cardContainer}>
-                    <Card
-                        imageSrc={GradCardImg}
-                        altText={"Project Image"}
-                        title={"Exibition Space"}
-                        description={"Frontend / Group Project"}
-                        linkers='/projects'
-                    />
-                    <Card
-                        imageSrc={BibliofileImg}
-                        altText={"Project Image"}
-                        title={"Bibliofile"}
-                        description={"Fullstack / Group Project"}
-                        linkers='/projects?activeTab=1'
-                    />
+                    <div class={styles.cardContainer}>
+                        <Card
+                            imageSrc={GradCardImg}
+                            altText={"Project Image"}
+                            title={"Exibition Space"}
+                            description={"Frontend / Group Project"}
+                            linkers='/projects'
+                        />
+                        <Card
+                            imageSrc={BibliofileImg}
+                            altText={"Project Image"}
+                            title={"Bibliofile"}
+                            description={"Fullstack / Group Project"}
+                            linkers='/projects?activeTab=1'
+                        />
+                    </div>
                 </div>
             </div>
             <Footer />
