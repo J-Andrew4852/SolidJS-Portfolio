@@ -1,14 +1,24 @@
 .projectsPage {
     padding: 40px 0 0 0;
 }
-.titleContainer {
-    background-color: #1E1E1E;
+.projectContainer {
+    display: flex;
+    justify-content: center;
+}
+.titleMax {
     position: fixed;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    background-color: #1E1E1E;
     width: 100%;
+}
+.titleContainer {
     display: flex;
     padding: 1rem;
     color: white;
+    width: 1700px;
+    padding-left: 3%;
 }
 .titleContainer * {
     font-size: 1.2rem;
@@ -49,4 +59,11 @@
 .circleAni.hovered {
     left: 95%;
     transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 800px) {
+    .titleContainer {
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
 }

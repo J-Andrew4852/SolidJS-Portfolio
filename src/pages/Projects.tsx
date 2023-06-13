@@ -95,18 +95,22 @@ const Projects: Component = () => {
 
     return (
         <div class={styles.projectsPage}>
-            <div class={styles.titleContainer}>
-                <div class={activeTab() === 0 || activeTab() === 3 ? styles.activeTitle : ''} onClick={() => setActiveTab(0)}>Exhibition Space</div>
-                <div class={activeTab() === 1 || activeTab() === 4 ? styles.activeTitle : ''} onClick={() => setActiveTab(1)}>Bibliofile</div>
-                <div class={activeTab() === 2 || activeTab() === 5 ? styles.activeTitle : ''} onClick={() => setActiveTab(2)}>Sustainability Victoria</div>
+            <div class={styles.titleMax}>
+                <div class={styles.titleContainer}>
+                    <div class={activeTab() === 0 || activeTab() === 3 ? styles.activeTitle : ''} onClick={() => setActiveTab(0)}>Exhibition Space</div>
+                    <div class={activeTab() === 1 || activeTab() === 4 ? styles.activeTitle : ''} onClick={() => setActiveTab(1)}>Bibliofile</div>
+                    <div class={activeTab() === 2 || activeTab() === 5 ? styles.activeTitle : ''} onClick={() => setActiveTab(2)}>Sustainability Victoria</div>
+                </div>
             </div>
             <div class={styles.circleAni} id="circleAni"></div>
-            {activeTab() === 0 && <ExhibitionSpace onClick={() => handleTabClick(3, 'rgba(121, 197, 0, 1)')} onHover={() => {setHover(true); setColor('rgba(121, 197, 0, 1)')}} onLeave={() => setHover(false)}/>}
-            {activeTab() === 1 && <Bibliofile onClick={() => handleTabClick(4, 'rgba(245, 175, 25)')} onHover={() => {setHover(true); setColor('rgba(245, 175, 25)')}} onLeave={() => setHover(false)} />}
-            {activeTab() === 2 && <SustainabilityVictoria onClick={() => handleTabClick(5, 'rgba(17, 152, 120)')} onHover={() => {setHover(true); setColor('rgba(17, 152, 120)')}} onLeave={() => setHover(false)} />}
-            {activeTab() === 3 && <ESProject />}
-            {activeTab() === 4 && <BFProject />}
-            {activeTab() === 5 && <SVProject />}
+            <div class={styles.projectContainer}>
+                {activeTab() === 0 && <ExhibitionSpace onClick={() => handleTabClick(3, 'rgba(121, 197, 0, 1)')} onHover={() => {setHover(true); setColor('rgba(121, 197, 0, 1)')}} onLeave={() => setHover(false)}/>}
+                {activeTab() === 1 && <Bibliofile onClick={() => handleTabClick(4, 'rgba(245, 175, 25)')} onHover={() => {setHover(true); setColor('rgba(245, 175, 25)')}} onLeave={() => setHover(false)} />}
+                {activeTab() === 2 && <SustainabilityVictoria onClick={() => handleTabClick(5, 'rgba(17, 152, 120)')} onHover={() => {setHover(true); setColor('rgba(17, 152, 120)')}} onLeave={() => setHover(false)} />}
+                {activeTab() === 3 && <ESProject />}
+                {activeTab() === 4 && <BFProject />}
+                {activeTab() === 5 && <SVProject />}
+            </div>
             <Footer />
         </div>
     )
