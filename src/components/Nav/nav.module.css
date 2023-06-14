@@ -13,6 +13,8 @@
     display: flex;
 }
 .navContent {
+    position: relative;
+    z-index: 8;
     display: flex;
     justify-content: center;
     width: 1700px;
@@ -43,6 +45,9 @@
     display: flex;
     align-items: center;
 }
+.openMenu {
+    position: fixed;
+}
 .navBtn {
     text-decoration: none;
     color: white;
@@ -58,11 +63,56 @@
     color: aqua;
 }
 
+.burgerMenu {
+    display: none;
+}
+.mobileNavContainer {
+    display: none;
+}
+
 @media screen and (min-width: 1800px) {
     .navContainer {
         margin-right: 0;
     }
     .logoContainer {
         margin-left: 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    .navContainer {
+        display: none;
+    }
+    .navContent {
+        border-bottom: 1px solid aqua;
+        background: linear-gradient(93.65deg, #321C64 -83.9%, #1D1133 32.3%, #09204D 150.94%);
+    }
+    .mobileNavContainer {
+        display: block;
+        position: fixed;
+        top: -200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(93.65deg, #321C64 -83.9%, #1D1133 32.3%, #09204D 150.94%);
+        width: 100vw;
+        z-index: 7;
+        border-bottom: 1px solid aqua;
+        gap: 25px;
+        padding: 70px 0 30px 0;
+        transition: top 0.5s ease-in;
+    }
+    .mobileNavOpen {
+        top: 0;
+    }
+    .navBtn {
+        font-size: 1.4rem;
+    }
+    .burgerMenu {
+        display: block;
+        margin-left: auto;
+        margin-right: 5vw;
+        padding: auto 10px auto 10px;
+        display: flex;
+        align-items: center;
     }
 }
