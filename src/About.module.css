@@ -4,12 +4,14 @@
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: #1E1E1E;
+    background-color: #f9f9fa;
 }
 .aboutContent {
     position: relative;
     max-width: 1700px;
     display: flex;
+    background-color: #1E1E1E;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 .leftSection {
     position: fixed;
