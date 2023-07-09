@@ -200,3 +200,15 @@
         margin-left: 0;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .botSection, .topSection {
+        background-color: var(--dark-background-color);
+    }
+    .iconsBtnContainer, .heroText, .botText {
+        background-color: var(--dark-container-bg-color);
+    }
+    .homePage {
+        color: var(--dark-text-color);
+    }
+}
