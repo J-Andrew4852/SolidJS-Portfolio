@@ -291,3 +291,13 @@
         width: 100%;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .projectPage {
+        background-color: var(--dark-backWidth);
+    }
+    .writeUpSection {
+        background-color: var(--dark-container-bg-color);
+        color: var(--dark-text-color);
+    }
+}

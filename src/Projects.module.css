@@ -67,3 +67,10 @@
         overflow-x: scroll;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .projectsPage {
+        background-color: var(--dark-background-color);
+        color: var(--dark-text-color);
+    }
+}

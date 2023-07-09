@@ -4,3 +4,12 @@
 .icon:hover {
     cursor: pointer;
 }
+
+@media (prefers-color-scheme: dark) {
+    .icon path {
+        fill: var(--dark-text-color);
+    }
+    .icon:hover path {
+        fill: aqua;
+    }
+}

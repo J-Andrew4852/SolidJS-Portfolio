@@ -198,3 +198,15 @@
         width: auto;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .rightSection {
+        background-color: var(--dark-background-color);
+    }
+    .aboutPage, .quotesContainer {
+        color: var(--dark-text-color);
+    }
+    .aboutPage {
+        background-color: var(--dark-backWidth);
+    }
+}
