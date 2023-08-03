@@ -75,14 +75,14 @@ const Home: Component = () => {
                             altText={"Project Image"}
                             title={"Exibition Space"}
                             description={"Frontend / Group Project"}
-                            linkers='/projects'
+                            linkers='/projects?activeTab=3'
                         />
                         <Card
                             imageSrc={BibliofileImg}
                             altText={"Project Image"}
                             title={"Bibliofile"}
                             description={"Fullstack / Group Project"}
-                            linkers='/projects?activeTab=1'
+                            linkers='/projects?activeTab=4'
                         />
                     </div>
                 </div>

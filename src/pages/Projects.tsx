@@ -48,7 +48,7 @@ const Projects: Component = () => {
           circleAni.classList.remove(styles.active);
           setIsAnimating(false);
           setHover(false);
-        }, 1500);
+        }, 900);
     };
 
     const handleTabClick = (index: number, color: string) => {
@@ -58,21 +58,21 @@ const Projects: Component = () => {
                 transitionAnimation();
                 setTimeout(() => {
                     setActiveTab(3);
-                }, 1000);
+                }, 750);
                 break;
             case 4:
                 setColor(color)
                 transitionAnimation();
                 setTimeout(() => {
                     setActiveTab(4);
-                }, 1000);
+                }, 750);
                 break;
             case 5:
                 setColor(color)
                 transitionAnimation();
                 setTimeout(() => {
                     setActiveTab(5);
-                }, 1000);
+                }, 750);
                 break;
             default:
                 setActiveTab(0);

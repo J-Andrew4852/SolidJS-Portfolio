@@ -39,21 +39,21 @@
     transform: translate(0, -50%);
     top: 50%;
     left: 105%;
-    min-width: 150vw;
-    min-height: 150vh;
+    min-width: 140vw;
+    min-height: 140vh;
     border-radius: 50%;
     z-index: 4;
     filter: blur(1vw);
     pointer-events: none;
-    transition: left 1.5s ease-in-out, transform 1.5s ease-in-out;
+    transition: left 0.7s ease-in-out, transform 0.7s ease-in-out;
     aspect-ratio: 1/1;
 }
   
 .circleAni.active {
-    transform: translate(-50%, -50%);
-    left: 50%;
+    transform: translate(0, -50%);
+    left: -10vw;
     aspect-ratio: 1/1;
-    transition-duration: 1.5s;
+    transition-duration: 0.7s;
 }
 
 .circleAni.hovered {
