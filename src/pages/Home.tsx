@@ -3,7 +3,7 @@ import { createSignal } from 'solid-js';
 import HomeCanvas from '../components/HomeCanvas/HomeCanvas';
 import styles from '../Home.module.css'
 import CircleHero from '../components/CircleHero/CircleHero';
-import { Linkedin } from '../components/Icons/Icons';
+import { CV, Linkedin } from '../components/Icons/Icons';
 import { Email } from '../components/Icons/Icons';
 import { Github } from '../components/Icons/Icons';
 import { Link } from 'solid-app-router';
@@ -47,6 +47,7 @@ const Home: Component = () => {
                                 <Github colour={'black'} linkers='https://github.com/J-Andrew4852/' />
                                 <Linkedin colour={'black'} />
                                 <Email colour={'black'} email='james.andrew4852@gmail.com' />
+                                <CV colour={'black'} />
                             </div>
                             <Link href="/projects">
                                 <div class={styles.projectsBtn}>Projects</div>
