@@ -1,6 +1,6 @@
 import { Component } from 'solid-js';
 import styles from '../About.module.css'
-import { Email, Github, Linkedin } from '../components/Icons/Icons';
+import { CV, Email, Github, Linkedin } from '../components/Icons/Icons';
 
 const About: Component = () => {
     return (
@@ -16,6 +16,7 @@ const About: Component = () => {
                             <Github colour={'white'} linkers='https://github.com/J-Andrew4852/' />
                             <Linkedin colour={'white'} />
                             <Email colour={'white'} email='james.andrew4852@gmail.com' />
+                            <CV colour={'white'} />
                         </div>
                         <p class={styles.statusTag}>Currently looking for a Frontend Web Developer position.</p>
                     </div>

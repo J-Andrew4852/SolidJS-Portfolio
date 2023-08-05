@@ -19,9 +19,9 @@ const Projects: Component = () => {
         setTimeout(() => {
             const params = new URLSearchParams(location.search);
             const activeTabQueryParam = params.get('activeTab');
-            console.log('test1');
+            // console.log('test1');
             
-            console.log('test2');
+            // console.log('test2');
             setActiveTab(parseInt(!!activeTabQueryParam ? activeTabQueryParam : "0"));
         }, 0);
     }, []);
@@ -31,10 +31,10 @@ const Projects: Component = () => {
         circleAni.style.backgroundColor = color();
         if (!isAnimating() && hover()) {
             circleAni.classList.add(styles.hovered);
-            console.log(hover())
+            // console.log(hover())
         } else {
             circleAni.classList.remove(styles.hovered);
-            console.log(hover())
+            // console.log(hover())
         }
     }, [color, hover]);
 

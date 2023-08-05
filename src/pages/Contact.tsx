@@ -55,6 +55,7 @@ const Contact: Component = () => {
             },
             (error) => {
                 console.error("Failed to send email:", error);
+                alert("Failed to send email.");
                 // You can handle errors here, e.g., show an error message to the user
             }
         );
