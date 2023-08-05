@@ -12,14 +12,12 @@ const App: Component = () => {
   return (
     <div class={styles.App}>
       <Nav />
-      <Router>
         <Routes>
-          <Route path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-      </Router>
     </div>
   );
 };
