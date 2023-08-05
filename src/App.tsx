@@ -14,10 +14,10 @@ const App: Component = () => {
       <Nav />
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
         </Routes>
       </Router>
     </div>
