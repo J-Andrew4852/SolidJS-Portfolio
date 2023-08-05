@@ -49,7 +49,7 @@ const Home: Component = () => {
                                 <Email colour={'black'} email='james.andrew4852@gmail.com' />
                                 <CV colour={'black'} />
                             </div>
-                            <Link href="/projects">
+                            <Link href="/projects" class={styles.links}>
                                 <div class={styles.projectsBtn}>Projects</div>
                             </Link>
                         </div>

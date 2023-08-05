@@ -86,6 +86,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none;
 }
 .projectsBtn:hover {
     color: aqua;
@@ -214,5 +215,9 @@
     }
     .homePage {
         color: var(--dark-text-color);
+    }
+    .projectsBtn {
+        background-color: white;
+        color: #1E1E1E;
     }
 }
