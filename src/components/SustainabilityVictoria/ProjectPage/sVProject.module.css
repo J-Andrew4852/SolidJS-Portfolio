@@ -1,5 +1,12 @@
 .projectPage {
     text-align: left;
+    background-color: #f9f9fa;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.maxWidth {
+    width: 1700px;
 }
 
 .topColourSection {
@@ -9,6 +16,7 @@
     padding: calc(80px + 2vh) 0 calc(5vw + 5vh) 0;
     display: flex;
     justify-content: space-between;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 .box {
     background-color: #1E1E1E;
@@ -166,6 +174,7 @@
     width: 100%;
     background: linear-gradient(rgba(41, 1, 155, 0.9) -35.75%, rgba(17, 152, 120, 0.9) 49.47%, rgba(1, 84, 131, 0.9) 134.15%);
     padding: calc(7vh + 5vw) 0 10vh 0;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 .reflectSection {
     width: 100%;
@@ -203,4 +212,87 @@
 .quoteBox h2 {
     font-size: 1.5rem;
     line-height: 150%;
+}
+
+@media screen and (max-width: 800px) {
+    .topColourSection {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 0 0;
+        padding: 5rem 0 5rem 0;
+        gap: 2rem;
+    }
+    .tools {
+        margin: 0;
+        padding: 2rem;
+    }
+    .webLinks {
+        margin: 0;
+        padding: 2rem;
+        gap: 20px;
+    }
+    .reflectSection {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .leadershipBox {
+        width: auto;
+        margin: 0 2rem;
+    }
+    .quoteBox {
+        width: auto;
+        margin: 0 2rem;
+    }
+    .myRole {
+        flex-direction: column-reverse;
+        width: auto;
+    }
+    .walkthroughPoints {
+        width: auto;
+    }
+    .galleryContainer {
+        width: 60%;
+    }
+
+}
+@media screen and (max-width: 650px) {
+    .box {
+        width: 75%;
+        padding: 2rem;
+    }
+    .goalSolution {
+        flex-direction: column;
+    }
+    .goal {
+        width: auto;
+    }
+    .solution {
+        width: auto;
+    }
+    .galleryContainer {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .box {
+        width: 55%;
+        padding: 2rem;
+        margin: 0;
+    }
+    .maxWidth {
+        width: 100%;
+    }
+    .galleryContainer {
+        width: auto;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .projectPage {
+        background-color: var(--dark-backWidth);
+    }
+    .writeUpSection {
+        background-color: var(--dark-container-bg-color);
+        color: var(--dark-text-color);
+    }
 }

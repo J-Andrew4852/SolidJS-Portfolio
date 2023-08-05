@@ -1,25 +1,30 @@
 .footer {
     width: 100%;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
 }
 .iconsContainer {
     margin-left: auto;
 }
 .footerContainer {
-    background-color: #1E1E1E;
     color: white;
     font-size: 1rem;
     font-weight: 300;
     display: flex;
     align-items: center;
     padding: 0.8rem 5vw 1rem 5vw;
+    width: 1700px;
 }
 .iconsContainer {
     display: flex;
     align-items: center;
-    padding: 0 0 0 1rem;
+    padding: 0 0 0 0;
 }
 .iconsContainer * {
-    margin-right: 2vw;
+    margin: 0 1vw 0 1vw;
     display: flex;
     justify-content: center;
 }

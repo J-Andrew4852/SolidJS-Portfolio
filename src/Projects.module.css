@@ -1,14 +1,24 @@
 .projectsPage {
     padding: 40px 0 0 0;
 }
-.titleContainer {
-    background-color: #1E1E1E;
+.projectContainer {
+    display: flex;
+    justify-content: center;
+}
+.titleMax {
     position: fixed;
-    z-index: 10;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    background-color: #1E1E1E;
     width: 100%;
+}
+.titleContainer {
     display: flex;
     padding: 1rem;
     color: white;
+    width: 1700px;
+    padding-left: 3%;
 }
 .titleContainer * {
     font-size: 1.2rem;
@@ -29,24 +39,38 @@
     transform: translate(0, -50%);
     top: 50%;
     left: 105%;
-    min-width: 150vw;
-    min-height: 150vh;
+    min-width: 140vw;
+    min-height: 140vh;
     border-radius: 50%;
-    z-index: 8;
+    z-index: 4;
     filter: blur(1vw);
     pointer-events: none;
-    transition: left 1.5s ease-in-out, transform 1.5s ease-in-out;
+    transition: left 0.7s ease-in-out, transform 0.7s ease-in-out;
     aspect-ratio: 1/1;
 }
   
 .circleAni.active {
-    transform: translate(-50%, -50%);
-    left: 50%;
+    transform: translate(0, -50%);
+    left: -10vw;
     aspect-ratio: 1/1;
-    transition-duration: 1.5s;
+    transition-duration: 0.7s;
 }
 
 .circleAni.hovered {
     left: 95%;
     transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 800px) {
+    .titleContainer {
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .projectsPage {
+        background-color: var(--dark-background-color);
+        color: var(--dark-text-color);
+    }
 }

@@ -3,11 +3,21 @@
     width: 100%;
     min-height: 100vh;
     display: flex;
+    justify-content: center;
+    background-color: #f9f9fa;
+}
+.aboutContent {
+    position: relative;
+    max-width: 1700px;
+    display: flex;
+    background-color: #1E1E1E;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 .leftSection {
     position: fixed;
     display: flex;
     height: 90vh;
+    max-height: 700px;
     width: 300px;
     background-color: #1E1E1E;
     padding: 10vh 3vw 0 5vw;
@@ -44,7 +54,11 @@
     opacity: 0;
 }
 
-
+.leftTextFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .iconsContainer {
     display: flex;
     align-items: center;
@@ -73,6 +87,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: white;
 }
 .textContainer {
     padding: 10vh 5vw 5vh 5vw;
@@ -120,12 +135,78 @@
 .quote {
     padding-bottom: 1rem;
     font-family: 'Zilla Slab', serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 150%;
 }
-/* .breakLine {
-    height: 70%;
-    width: 1px;
-    background-color: white;
-} */
+
+@media screen and (min-width: 1700px) {
+    .statusTag {
+        font-size: 1.3rem;
+    }
+    .rightSection h2 {
+        font-size: 2.5rem;
+    }
+    .aboutPoints {
+        font-size: 1.4rem;
+    }
+    .aboutPoints li::before { 
+        font-size: 2rem;
+    }
+    .quote {
+        font-size: 1.5rem;
+    }
+    .quoter {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .aboutContent {
+        flex-direction: column;
+    }
+    .leftSection {
+        position: relative;
+        width: auto;
+        height: auto;
+        padding: 70px 5vw 5vh 5vw;
+        flex-direction: row;
+    }
+    .rightPad {
+        display: none;
+    }
+    .imgContainer {
+        width: 40%;
+    }
+    .leftTextFlex {
+        padding: 0 5vw 0 10vw;
+        gap: 10px;
+    }
+    .aboutPoints {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .leftSection {
+        flex-direction: column;
+    }
+    .quotesContainer {
+        flex-direction: column;
+    }
+    .quoteBox {
+        width: auto;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .rightSection {
+        background-color: var(--dark-background-color);
+    }
+    .aboutPage, .quotesContainer {
+        color: var(--dark-text-color);
+    }
+    .aboutPage {
+        background-color: var(--dark-backWidth);
+    }
+}
