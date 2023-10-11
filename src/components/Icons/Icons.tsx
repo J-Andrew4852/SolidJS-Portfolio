@@ -1,7 +1,7 @@
 import { Component } from 'solid-js';
 import styles from './icons.module.css';
 import { JSX } from 'solid-js';
-import cvPdf from '../../assets/Resume-James_Andrew.pdf'
+import cvPdf from '../../assets/Resume-James_Andrew-11_10_2023.pdf';
 import { Link } from 'solid-app-router';
 
 interface EmailProps {
