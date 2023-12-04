@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@vercel/analytics': ^1.1.1
   solid-app-router: ^0.4.2
   solid-js: ^1.6.6
   typescript: ^4.9.4
@@ -8,6 +9,7 @@ specifiers:
   vite-plugin-solid: ^2.5.0
 
 dependencies:
+  '@vercel/analytics': 1.1.1
   solid-app-router: 0.4.2_solid-js@1.6.6
   solid-js: 1.6.6
 
@@ -569,6 +571,12 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
+  /@vercel/analytics/1.1.1:
+    resolution: {integrity: sha512-+NqgNmSabg3IFfxYhrWCfB/H+RCUOCR5ExRudNG2+pcRehq628DJB5e1u1xqwpLtn4pAYii4D98w7kofORAGQA==}
+    dependencies:
+      server-only: 0.0.1
+    dev: false
+
   /ansi-styles/3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
     engines: {node: '>=4'}
@@ -824,6 +832,10 @@ packages:
     resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==}
     hasBin: true
     dev: true
+
+  /server-only/0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
+    dev: false
 
   /solid-app-router/0.4.2_solid-js@1.6.6:
     resolution: {integrity: sha512-+NrLcmqYssx8DcbpcLBaYPqfTRtS+rkfbxMhLH8MHfTcTkdZfrkWQK7lsUvuPCebGEzfaPZJvHqBwhPrCXAmxg==}
