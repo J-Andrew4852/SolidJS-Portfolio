@@ -21,9 +21,9 @@ const ESProject: Component = () => {
                         <Nextjs />
                     </div>
                     <div class={`${styles.webLinks} ${styles.box}`}>
-                        <a href="https://2022.curtindesign.com/#GradShow" target="_blank">
+                        <a href="https://grad-show-frontend-v2-2022-j-andrew4852.vercel.app/" target="_blank">
                             <div class={styles.webLink}>
-                                <WebsiteLink colour='white' linkers='https://2022.curtindesign.com/#GradShow' />
+                                <WebsiteLink colour='white' linkers='https://grad-show-frontend-v2-2022-j-andrew4852.vercel.app/' />
                                 <p>Check out the website</p>
                             </div>
                         </a>

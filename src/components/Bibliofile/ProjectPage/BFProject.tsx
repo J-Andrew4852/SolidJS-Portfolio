@@ -25,12 +25,6 @@ const BFProject: Component = () => {
                         <Parcel />
                     </div>
                     <div class={`${styles.webLinks} ${styles.box}`}>
-                        <a href="https://biblio-file-frontend.vercel.app/" target="_blank">
-                            <div class={styles.webLink}>
-                                <WebsiteLink colour='white' linkers='https://biblio-file-frontend.vercel.app/' />
-                                <p>Check out the website</p>
-                            </div>
-                        </a>
                         <a href="https://github.com/J-Andrew4852/BiblioFile-frontend" target="_blank">
                             <div class={styles.webLink}>
                                 <GithubLarge colour='white' linkers='https://github.com/J-Andrew4852/BiblioFile-frontend' />
